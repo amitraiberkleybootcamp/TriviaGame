@@ -28,11 +28,8 @@ var questions_answers = [
  
 
   	function checkAnswer() {
-  		console.log(questions_answers[currentquestion].correctAnswer);
-  		console.log("currentquestion :"+ currentquestion);
 
   		if ($('input[name=option]:checked').val() == questions_answers[currentquestion].correctAnswer) {
-  			console.log("I am coming here");
     		correctAnswers++;
   		}
 
@@ -84,7 +81,7 @@ var questions_answers = [
 	//  Our stopwatch object.
 	var stopwatch = {
 
-  		time: 10,
+  		time: 100,
 
   		start: function() 
   		{
